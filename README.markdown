@@ -8,3 +8,6 @@ The file was changed a bit to fit my needs.
 The overall structure is based on some other Latex Templates / Projects.
 
 A simple Makefile is included.
+
+To get a preview of the output a sample text is included and also the compiled pdf.
+Just grab [ausgabe.pdf](https://github.com/twaldecker/Personal-Hochschule-Muenchen-Latex-Template/blob/master/ausgabe.pdf?raw=true) and view it.
