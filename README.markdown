@@ -14,9 +14,8 @@ Just grab [ausgabe.pdf](https://github.com/twaldecker/Personal-Hochschule-Muench
 
 ## Getting Started:
 Create a doc directory, clone the repo and checkout a new branch to work on:
-```
-mkdir doc
-git clone git@github.com:twaldecker/Personal-Hochschule-Muenchen-Latex-Template.git doc
-cd doc
-git checkout -b doc
-```
+
+    mkdir doc
+    git clone git@github.com:twaldecker/Personal-Hochschule-Muenchen-Latex-Template.git doc
+    cd doc
+    git checkout -b doc
