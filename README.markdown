@@ -11,3 +11,12 @@ A simple Makefile is included.
 
 To get a preview of the output a sample text is included and also the compiled pdf.
 Just grab [ausgabe.pdf](https://github.com/twaldecker/Personal-Hochschule-Muenchen-Latex-Template/blob/master/ausgabe.pdf?raw=true) and view it.
+
+## Getting Started:
+Create a doc directory, clone the repo and checkout a new branch to work on:
+```
+mkdir doc
+git clone git@github.com:twaldecker/Personal-Hochschule-Muenchen-Latex-Template.git doc
+cd doc
+git checkout -b doc
+```
