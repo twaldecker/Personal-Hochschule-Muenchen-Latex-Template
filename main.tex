@@ -1,0 +1,68 @@
+%% Standard-Vorspann
+\documentclass[a4paper,11pt,oneside]{article}
+\usepackage{ngerman}                   
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[fleqn]{amsmath}
+
+%% Auf Schriftart Palatino umschalten
+\usepackage{mathpazo}
+\usepackage[scaled=.95]{helvet}
+\usepackage{courier}
+
+%% fast immer benoetigte Pakete
+\usepackage{epsfig}
+\usepackage{amssymb}
+\usepackage{alltt}
+\usepackage{latexsym}
+\usepackage{makeidx}
+\usepackage{textcomp}
+\usepackage{rotating}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{verbatim}
+\usepackage{fancyhdr}
+
+\usepackage[
+  plainpages=false,
+  unicode=true,          % non-Latin characters in Acrobat?s bookmarks
+  pdftoolbar=true,        % show Acrobat?s toolbar?
+  pdfmenubar=true,        % show Acrobat?s menu?
+  pdffitwindow=true,     % window fit to page when opened
+  pdfstartview={FitV},    % fits the width of the page to the window
+  pdfnewwindow=true,      % links in new window
+  colorlinks=true,       % false: boxed links; true: colored links
+  linkcolor=red,          % color of internal links
+  citecolor=green,        % color of links to bibliography
+  filecolor=magenta,      % color of file links
+  urlcolor=cyan,          % color of external links
+  hyperfootnotes=false,
+  bookmarks,
+]{hyperref}
+ 							
+%% spezielles Zeug
+\usepackage{Abschlussarbeit}
+
+%% Index erzeugen
+\makeindex
+
+%% jetzt geht's los
+\begin{document}
+\raggedbottom
+
+
+\include{00-vorspann}  
+\include{01-einleitung}
+%\include{kap1}
+
+
+%% Beim Anhang gibt es eine Musterdatei, die 
+%% ergänzt werden kann
+\include{99-anhang}
+
+
+%% Stichwortverzeichnis ausgeben.
+%% falls nicht notwendig, die folgende Zeile loeschen
+\printindex
+
+\end{document}
