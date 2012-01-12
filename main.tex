@@ -1,5 +1,7 @@
 %% Standard-Vorspann
 \documentclass[a4paper,11pt,oneside]{article}
+\usepackage{geometry}
+\geometry{a4paper,left=20mm,right=20mm, top=2cm, bottom=2cm} 
 \usepackage{ngerman}                   
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -31,7 +33,7 @@
 \usepackage[
   plainpages=false,
   unicode=true,          % non-Latin characters in Acrobat?s bookmarks
-  pdftitle=,
+  pdftitle={title},
   pdfauthor=Thomas\ Waldecker,
   pdftoolbar=true,        % show Acrobat?s toolbar?
   pdfmenubar=true,        % show Acrobat?s menu?
@@ -66,7 +68,7 @@
 	framexbottommargin=4pt,
 	showstringspaces=false      % Leerzeichen in Strings anzeigen ?        
 }
-\lstloadlanguages{PHP, XML, HTML}
+\lstloadlanguages{ruby, HTML}
 \DeclareCaptionFont{white}{\color{white}}
 \DeclareCaptionFormat{listing}{\colorbox[cmyk]{0.43, 0.35, 0.35,0.01}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
 \captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}}		
@@ -81,11 +83,8 @@
 \begin{document}
 \raggedbottom
 
-
 \input{00-vorspann}  
 \input{01-einleitung}
-%\include{kap1}
-
 
 %% Beim Anhang gibt es eine Musterdatei, die 
 %% ergänzt werden kann
