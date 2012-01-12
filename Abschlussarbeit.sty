@@ -50,11 +50,14 @@
 %\renewcommand{\chaptermark}[1]{\markboth{\thesection\quad #1}{}}
 \renewcommand{\sectionmark}[1]{\markboth{\thesection\quad #1}{}}
 \fancyhf{}
-\fancyhead[RO]{\thepage}
-\fancyhead[LO]{\nouppercase \leftmark}
+\fancyhead[R]{12.01.12}
+\fancyhead[L]{Projektarbeit Web-Engineering Thomas Waldecker}
 %\fancyhead[RE]{\nouppercase \leftmark}
-\fancyfoot{}
+\fancyfoot[L]{}
+\fancyfoot[R]{\thepage}
 \fancypagestyle{plain}{\fancyhead{}\renewcommand{\headrulewidth}{0pt}}
+\renewcommand{\footrule}{\vbox to 0pt{\hbox to\headwidth{}\vss}}
+
 
 %% Erste Seite eines Kapitels (keine Seitenzahl)
 %\renewcommand\chapter{\if@openright
@@ -238,24 +241,6 @@
  \end{center}%
  \vspace{-0.7em}%
  \end{figure}}
-
-
-% ---------------------------------------------------------------- Listings
-
-%% listing
-%% ~~~~~~~
-%% Umgebung fuer Listings und andere Textteile, die 'verbatim'
-%% ausgegeben werden sollen. Schrift kleiner (footnotesize),
-%% Teletype-Font, Abstand zum Text etwas kleiner als bei Standard-verbatim.
-%% Alle Zeichen sind erlaubt (keine Ersatzdarstellung noetig)
-
-\newenvironment{rlisting}%
- {\rule{\linewidth}{0.5pt}\footnotesize\verbatim}%
- {\endverbatim\rule{\linewidth}{0.5pt}}
-
-\newenvironment{listing}%
- {\vspace{-5pt}\quote\footnotesize\verbatim}%
- {\endverbatim\endquote\vspace{-5pt}}
 
 % ------------------------------------------------------- Standard-Tabellen
 
