@@ -19,3 +19,9 @@ Create a doc directory, clone the repo and checkout a new branch to work on:
     git clone git@github.com:twaldecker/Personal-Hochschule-Muenchen-Latex-Template.git doc
     cd doc
     git checkout -b doc
+    
+## Alternative layout for short article:
+
+    git checkout short
+
+Preview: [ausgabe.pdf](https://github.com/twaldecker/Personal-Hochschule-Muenchen-Latex-Template/blob/short/ausgabe.pdf?raw=true)
