@@ -24,4 +24,12 @@ Create a doc directory, clone the repo and checkout a new branch to work on:
 
     git checkout short
 
-Preview: [ausgabe.pdf](https://github.com/twaldecker/Personal-Hochschule-Muenchen-Latex-Template/blob/short/ausgabe.pdf?raw=true)
+preview: [ausgabe.pdf](https://github.com/twaldecker/personal-hochschule-muenchen-latex-template/blob/short/ausgabe.pdf?raw=true)
+
+## Presentation:
+
+    git checkout presentation
+
+Preview: [ausgabe.pdf](https://github.com/twaldecker/personal-hochschule-muenchen-latex-template/blob/presentation/ausgabe.pdf?raw=true)
+
+
