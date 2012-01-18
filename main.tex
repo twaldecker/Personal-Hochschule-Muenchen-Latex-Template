@@ -1,99 +1,36 @@
-%% Standard-Vorspann
-\documentclass[a4paper,11pt,oneside]{article}
+\documentclass{beamer}
+
+\mode<presentation>
+{
+  \usetheme{Pittsburgh}
+  \usecolortheme{beaver}
+  \setbeamercovered{transparent}
+}
+
 \usepackage{ngerman}                   
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[fleqn]{amsmath}
 
 %% Auf Schriftart Palatino umschalten
 \usepackage{mathpazo}
 \usepackage[scaled=.95]{helvet}
 \usepackage{courier}
 
-%% fast immer benoetigte Pakete
-\usepackage{epsfig}
-\usepackage{amssymb}
-\usepackage{alltt}
-\usepackage{latexsym}
-\usepackage{makeidx}
-\usepackage{textcomp}
-\usepackage{rotating}
-\usepackage{color}
-\usepackage{caption}
-\usepackage{verbatim}
-\usepackage{fancyhdr}
+\title{Titel}
+\subtitle{Untertitel}
 
-%packages for codelisting see: http://stackoverflow.com/questions/741985
-\usepackage{color, xcolor}
-\usepackage{listings}
-\usepackage{courier}
-
-\usepackage[
-  plainpages=false,
-  unicode=true,          % non-Latin characters in Acrobat?s bookmarks
-  pdftitle=,
-  pdfauthor=Thomas\ Waldecker,
-  pdftoolbar=true,        % show Acrobat?s toolbar?
-  pdfmenubar=true,        % show Acrobat?s menu?
-  pdffitwindow=true,     % window fit to page when opened
-  pdfstartview={FitV},    % fits the width of the page to the window
-  pdfnewwindow=true,      % links in new window
-  colorlinks=true,       % false: boxed links; true: colored links
-  linkcolor=red,          % color of internal links
-  citecolor=green,        % color of links to bibliography
-  filecolor=magenta,      % color of file links
-  urlcolor=cyan,          % color of external links
-  hyperfootnotes=false,
-  bookmarks,
-]{hyperref}
-
-%Konfigutation für Codelisting
-%see: http://stackoverflow.com/questions/741985
-\lstset{
-	basicstyle=\footnotesize\ttfamily, % Standardschrift
-	numbers=left,               % Ort der Zeilennummern
-	numberstyle=\tiny,          % Stil der Zeilennummern
-	numbersep=5pt,              % Abstand der Nummern zum Text
-	tabsize=2,                  % Groesse von Tabs
-	extendedchars=true,         %
-	breaklines=true,            % Zeilen werden Umgebrochen
-	stringstyle=\ttfamily, % Farbe der String
-	showspaces=false,           % Leerzeichen anzeigen ?
-	showtabs=false,             % Tabs anzeigen ?
-	xleftmargin= 17pt,
-	framexleftmargin=17pt,
-	framexrightmargin=5pt,
-	framexbottommargin=4pt,
-	showstringspaces=false      % Leerzeichen in Strings anzeigen ?        
+\author{Thomas Waldecker}
+\institute{
+Hochschule München\\
+Fakultät für Mathematik und Informatik
 }
-\lstloadlanguages{PHP, XML, HTML}
-\DeclareCaptionFont{white}{\color{white}}
-\DeclareCaptionFormat{listing}{\colorbox[cmyk]{0.43, 0.35, 0.35,0.01}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
-\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}}		
-		
-%% spezielles Zeug
-\usepackage{Abschlussarbeit}
+\date{19.01.2012}
 
-%% Index erzeugen
-\makeindex
+\pgfdeclareimage[height=0.5cm]{university-logo}{img/hm}
+\logo{\pgfuseimage{university-logo}}
 
-%% jetzt geht's los
 \begin{document}
-\raggedbottom
-
-
-\include{00-vorspann}  
-\include{01-einleitung}
-%\include{kap1}
-
-
-%% Beim Anhang gibt es eine Musterdatei, die 
-%% ergänzt werden kann
-\include{99-anhang}
-
-
-%% Stichwortverzeichnis ausgeben.
-%% falls nicht notwendig, die folgende Zeile loeschen
-\printindex
-
+\input{00-einleitung}
+\input{01-content}
+\input{99-schluss}
 \end{document}
