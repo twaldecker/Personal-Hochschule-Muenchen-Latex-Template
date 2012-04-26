@@ -1,0 +1,93 @@
+\ProvidesPackage{config}[2012/04/26]
+
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{epsfig}
+\usepackage{makeidx}
+\usepackage{rotating}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+%packages for codelisting see: http://stackoverflow.com/questions/741985
+\usepackage{color, xcolor}
+\usepackage{listings}
+\usepackage{courier}
+
+\usepackage[
+  plainpages=false,
+  unicode=true,          % non-Latin characters in Acrobat?s bookmarks
+  pdftitle=,
+  pdfauthor=GSM OpenBTS Handover Action Group,
+  pdftoolbar=true,        % show Acrobat?s toolbar?
+  pdfmenubar=true,        % show Acrobat?s menu?
+  pdffitwindow=true,     % window fit to page when opened
+  pdfstartview={FitV},    % fits the width of the page to the window
+  pdfnewwindow=true,      % links in new window
+  colorlinks=true,       % false: boxed links; true: colored links
+  linkcolor=red,          % color of internal links
+  citecolor=green,        % color of links to bibliography
+  filecolor=magenta,      % color of file links
+  urlcolor=cyan,          % color of external links
+  hyperfootnotes=false,
+  bookmarks,
+]{hyperref}
+
+%http://en.wikibooks.org/wiki/LaTeX/Glossary
+\usepackage[nonumberlist]{glossaries} %keine seitenzahlen
+
+%Konfigutation für Codelisting
+%see: http://stackoverflow.com/questions/741985
+\lstset{
+	basicstyle=\footnotesize\ttfamily, % Standardschrift
+	numbers=left,               % Ort der Zeilennummern
+	numberstyle=\tiny,          % Stil der Zeilennummern
+	numbersep=5pt,              % Abstand der Nummern zum Text
+	tabsize=2,                  % Groesse von Tabs
+	extendedchars=true,         %
+	breaklines=true,            % Zeilen werden Umgebrochen
+	stringstyle=\ttfamily, % Farbe der String
+	showspaces=false,           % Leerzeichen anzeigen ?
+	showtabs=false,             % Tabs anzeigen ?
+	xleftmargin=17pt,
+	framexleftmargin=17pt,
+	framexrightmargin=5pt,
+	framexbottommargin=4pt,
+	showstringspaces=false      % Leerzeichen in Strings anzeigen ?        
+}
+
+\lstloadlanguages{PHP, XML, HTML}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox[cmyk]{0.43, 0.35, 0.35,0.01}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}}
+
+%% Index erzeugen
+\makeindex
+\makeglossaries
+\renewcommand*{\glspostdescription}{} %keine punkte nach beschreibung
+
+%titelseite kopf
+\titlehead{
+\begin{flushright}
+\includegraphics[width=70mm]{img/hm}%
+\end{flushright}
+\begin{center}
+\vspace*{10mm}
+{\Large Hochschule München}\\
+{\large Fakultät für Mathematik und Informatik}
+\end{center}
+}
+%titelseite fuß
+\publishers{
+\parbox{\textwidth}{
+\vspace*{60mm}
+\large
+\begin{tabularx}{0.8\textwidth}{lX}
+\textbf{Abgabe:} &      \abgabe \\[1em]
+\textbf{betreut von:} & \betreuer \\[1em]
+& \betreuera
+\end{tabularx}
+}}\normalsize
+
