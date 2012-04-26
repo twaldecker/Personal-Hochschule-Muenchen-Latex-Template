@@ -1,33 +1,55 @@
 \appendix
-\section{Anhang}
-\setcounter{section}{1}
-\begin{flushleft}
 
-\subsection{Literaturverzeichnis}
-%% einfache Aufzählung, kein BibTeX
-\begin{enumerate}
+\glsaddall % alle definierten abkürzungen zeigen
+\printglossary[numberedsection, title=Glossar] %Glossar, section mit nummer.
 
-%% Beispiel für einen Eintrag
-\item
-P. Levis, D. Gay:
-{\it TinyOS Programming},
-Cambridge University Press 2009
 
-\item
-H. Karl, A. Willig:
-{\it Protocols and Architectures for Wireless Sensor Networks},
-John Wiley \& Sons, Ltd
+\begin{thebibliography}{}
+\bibitem{bib:grundkursmks} Martin Sauter:
+{\it Grundkurs Mobile Kommunikationssysteme},
+Vieweg+Teubner Verlag, Wiesbaden 2011
 
-\item
-Wikipedia Parkleitsystem:
-\url{http://de.wikipedia.org/wiki/Parkleitsystem},
-Abgerufen am 29.12.2011
+\bibitem{bib:buildopenbsc} Building OpenBSC:
+\url{http://openbsc.osmocom.org/trac/wiki/Building_OpenBSC}
+Abgerufen am 09.03.2012
 
-\item
-Foto Parkleitsystem:
-\url{http://commons.wikimedia.org/wiki/File:Verkehrsleitsystem_Schwetzingen.JPG?uselang=de},
-Abgerufen am 29.12.2011
+\bibitem{bib:ipaccess} ipaccess-config (Konfiguration der nanoBTS):
+\url{http://openbsc.osmocom.org/trac/wiki/ipaccess-config}
+Abgerufen am 09.03.2012
 
-\end{enumerate}
-\end{flushleft}
-\leereseite
+\bibitem{bib:diagramm:openbts} OpenBTS System Diagramm:
+\url{https://wush.net/trac/rangepublic/attachment/wiki/BuildInstallRun/openbts_system_diagram.png},
+Abgerufen am 03.03.2012
+
+\bibitem{bib:openbtsmanual} Range Networks Inc.:
+{\it OpenBTS P2.8 Users Manual Doc. Rev. 1},
+Range Networks Inc. 2011
+
+\bibitem{bib:nokiagammu} AirProbe Wiki - tracelog:
+\url{https://svn.berlin.ccc.de/projects/airprobe/wiki/tracelog}, Abgerufen am 09.03.2012
+
+\bibitem{bib:wiresharkabis} Wireshark Abis dissector:
+\url{http://openbsc.osmocom.org/trac/wiki/nanoBTS#Wiresharkdissector}, Abgerufen am 16.03.2012
+
+\bibitem{bib:wiresharkabisreadme} Wireshark Abis README:
+\url{http://openbsc.osmocom.org/trac/browser/wireshark/README}, Abgerufen am 16.03.2012
+
+\bibitem{bib:3gpp0408} 3GPP specification 0408 \textit{Mobile radio interface layer 3 specification}:
+\url{http://www.3gpp.org/ftp/Specs/html-info/0408.htm}, Version 4.25.0
+
+\bibitem{bib:3gpp0104} 3GPP specification 0104 \textit{Abbreviations and acronyms}:
+\url{http://www.3gpp.org/ftp/Specs/html-info/0104.htm}, Version 8.0.0
+	
+\bibitem{bib:3gpp0406} 3GPP specification 0406 \textit{Mobile Station - Base Stations System (MS - BSS) Interface Data Link (DL) Layer Specification}:
+\url{http://www.3gpp.org/ftp/Specs/html-info/0406.htm}, Version 8.4.0
+
+\bibitem{bib:openbtshandover} github Repository OpenBTS Handover Erweiterung:
+\url{https://github.com/twaldecker/Mobile_Netze_HM_OpenBTS_Handover}, Abgerufen am 18.03.2012
+
+\bibitem{bib:githubfiles} github Repository Mobile Netze Files:
+\url{https://github.com/twaldecker/mobile_nw_hm}, Abgerufen am 18.03.2012
+
+\bibitem{bib:githubdoku} github Repository Mobile Netze Project Documentation:
+\url{https://github.com/twaldecker/mobile_nw_hm_docu}, Abgerufen am 18.03.2012
+
+\end{thebibliography}

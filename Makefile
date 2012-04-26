@@ -1,9 +1,14 @@
 MAINFILE = main.tex
-OPTIONS = --jobname=ausgabe
+AUSGABE = ausgabe
+OPTIONS = --jobname=$(AUSGABE)
+
 default: pdf
 
 pdf:
 	pdflatex $(OPTIONS) $(MAINFILE)
+
+glossary:
+	makeglossaries $(AUSGABE)
 
 clean:
 	find . \
@@ -20,5 +25,9 @@ clean:
 	-o -name "*.toc" \
 	-o -name "*.snm" \
 	-o -name "*.nav" \
-	-o -name "*.idx" \) \
+	-o -name "*.idx" \
+	-o -name "*.glg" \
+	-o -name "*.glo" \
+	-o -name "*.gls" \
+	-o -name "*.ist" \) \
 	-print0 | xargs -0 rm
