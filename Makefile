@@ -4,11 +4,16 @@ OPTIONS = --jobname=$(AUSGABE)
 
 default: pdf
 
+all: pdf bibliography glossary
+
 pdf:
 	pdflatex $(OPTIONS) $(MAINFILE)
 
 glossary:
 	makeglossaries $(AUSGABE)
+
+bibliography:
+	bibtex $(AUSGABE)
 
 clean:
 	find . \
@@ -29,5 +34,7 @@ clean:
 	-o -name "*.glg" \
 	-o -name "*.glo" \
 	-o -name "*.gls" \
-	-o -name "*.ist" \) \
+	-o -name "*.ist" \
+	-o -name "*.bbl" \
+	-o -name "*.blg" \) \
 	-print0 | xargs -0 rm
