@@ -19,6 +19,16 @@ Create a doc directory, clone the repo and checkout a new branch to work on:
     git clone git@github.com:twaldecker/Personal-Hochschule-Muenchen-Latex-Template.git doc
     cd doc
     git checkout -b doc
+
+## Bibtex branch
+
+There is a bibtex branch which is using the bibtex bibliography.
+
+    git checkout bibtex
+    make all
+    make all
+    make all
+
     
 ## Alternative layout for short article:
 
